@@ -202,6 +202,7 @@ bar {
 	}
 }
 
+# CONFIGURACIONES PERSONALES
 # GAPS
 gaps inner 2
 gaps outer 2
@@ -209,8 +210,9 @@ gaps outer 2
 # CAMBIAR COLOR DE LOS BORDES
 client.focused #444444 #bf7500 $444444 #ffff70
 
-# CONFIGURACIONES PERSONALES
+# EJECUTAR PROGRAMAS
 bindsym $mod+e exec thunar
+bindsym $mod+c exec code
 
 # ESTABLECER FONDO DE PANTALLA
 exec --no-startup-id feh --bg-scale "/home/damar/Imágenes/Wallpapers/Shinobu Kocho.png"
