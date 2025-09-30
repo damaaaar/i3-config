@@ -203,8 +203,6 @@ bar {
 }
 
 # CONFIGURACIONES PERSONALES
-# GAPS
-gaps inner 2
 gaps outer 2
 
 # CAMBIAR COLOR DE LOS BORDES
@@ -213,9 +211,11 @@ client.focused #444444 #bf7500 $444444 #ffff70
 # EJECUTAR PROGRAMAS
 bindsym $mod+e exec thunar
 bindsym $mod+c exec code
+bindsym $mod+g exec google-chrome
 
-# ESTABLECER FONDO DE PANTALLA
-exec --no-startup-id feh --bg-scale "/home/damar/Imágenes/Wallpapers/Shinobu Kocho.png"
+# CONFIGURAR MONITORES Y FÓNDE DE PANTALLA
+exec --no-startup-id ~/.personal_config/setup_monitores.sh
+# exec --no-startup-id feh --bg-scale "/home/damar/Imágenes/Wallpapers/Shinobu Kocho.png"
 
 # CONFIGURACIÓN DE BRILLO
 bindsym XF86MonBrightnessDown exec brightnessctl set 10%-
@@ -224,8 +224,3 @@ bindsym XF86MonBrightnessUp exec brightnessctl set +10%
 # QUITAR TITULOS
 for_window [class="^.*"] border pixel 3
 
-# EJECUTAR GOOGLE CHROME
-bindsym $mod+g exec google-chrome
-
-# CONFIGURAR gnome-keyring
-exec --no-startup-id /usr/bin/gnome-keyring-daemon --start --components=secrets
