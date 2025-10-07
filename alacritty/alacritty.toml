@@ -1,0 +1,24 @@
+[terminal]
+[terminal.shell]
+program = "/usr/bin/zsh"
+args = []
+
+[font.bold]
+family = "CascadiaCode PL"
+style = "Bold"
+
+[font.glyph_offset]
+x = 0
+y = 0
+
+[font.italic]
+family = "CascadiaCode PL"
+style = "Italic"
+
+[font.normal]
+family = "CascadiaCode PL"
+style = "Regular"
+
+[font.offset]
+x = 0
+y = 0
